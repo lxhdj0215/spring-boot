@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lxhdj.dao.mapper.LadderTaskMapper" >
+  <resultMap id="BaseResultMap" type="com.lxhdj.dao.domain.LadderTask" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="activity_id" property="activityId" jdbcType="INTEGER" />
+    <result column="biz_id" property="bizId" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+    <result column="match_type" property="matchType" jdbcType="INTEGER" />
+    <result column="biz_name" property="bizName" jdbcType="VARCHAR" />
+    <result column="token" property="token" jdbcType="VARCHAR" />
+    <result column="launch_task_pin" property="launchTaskPin" jdbcType="VARCHAR" />
+    <result column="award_type" property="awardType" jdbcType="INTEGER" />
+    <result column="task_start_time" property="taskStartTime" jdbcType="TIMESTAMP" />
+    <result column="recent_share_time" property="recentShareTime" jdbcType="TIMESTAMP" />
+    <result column="activity_end_time" property="activityEndTime" jdbcType="TIMESTAMP" />
+    <result column="first_ladder_status" property="firstLadderStatus" jdbcType="INTEGER" />
+    <result column="first_ladder_complete_time" property="firstLadderCompleteTime" jdbcType="TIMESTAMP" />
+    <result column="first_ladder_pins" property="firstLadderPins" jdbcType="VARCHAR" />
+    <result column="first_ladder_awards" property="firstLadderAwards" jdbcType="VARCHAR" />
+    <result column="second_ladder_status" property="secondLadderStatus" jdbcType="INTEGER" />
+    <result column="second_ladder_complete_time" property="secondLadderCompleteTime" jdbcType="TIMESTAMP" />
+    <result column="second_ladder_pins" property="secondLadderPins" jdbcType="VARCHAR" />
+    <result column="second_ladder_awards" property="secondLadderAwards" jdbcType="VARCHAR" />
+    <result column="third_ladder_status" property="thirdLadderStatus" jdbcType="INTEGER" />
+    <result column="third_ladder_complete_time" property="thirdLadderCompleteTime" jdbcType="TIMESTAMP" />
+    <result column="third_ladder_pins" property="thirdLadderPins" jdbcType="VARCHAR" />
+    <result column="third_ladder_awards" property="thirdLadderAwards" jdbcType="VARCHAR" />
+    <result column="ladder" property="ladder" jdbcType="INTEGER" />
+    <result column="task_status" property="taskStatus" jdbcType="INTEGER" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="image" property="image" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, activity_id, biz_id, type, match_type, biz_name, token, launch_task_pin, award_type, 
+    task_start_time, recent_share_time, activity_end_time, first_ladder_status, first_ladder_complete_time, 
+    first_ladder_pins, first_ladder_awards, second_ladder_status, second_ladder_complete_time, 
+    second_ladder_pins, second_ladder_awards, third_ladder_status, third_ladder_complete_time, 
+    third_ladder_pins, third_ladder_awards, ladder, task_status, modify_time, create_time, 
+    image
+  </sql>
+</mapper>

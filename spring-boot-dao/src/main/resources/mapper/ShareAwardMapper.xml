@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lxhdj.dao.mapper.ShareAwardMapper" >
+  <resultMap id="BaseResultMap" type="com.lxhdj.dao.domain.ShareAward" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="activity_id" property="activityId" jdbcType="INTEGER" />
+    <result column="biz_id" property="bizId" jdbcType="VARCHAR" />
+    <result column="token" property="token" jdbcType="VARCHAR" />
+    <result column="launch_task_pin" property="launchTaskPin" jdbcType="VARCHAR" />
+    <result column="beans" property="beans" jdbcType="INTEGER" />
+    <result column="coupons_num" property="couponsNum" jdbcType="INTEGER" />
+    <result column="coupons" property="coupons" jdbcType="VARCHAR" />
+    <result column="reward_flag" property="rewardFlag" jdbcType="INTEGER" />
+    <result column="complete_time" property="completeTime" jdbcType="TIMESTAMP" />
+    <result column="reward_time" property="rewardTime" jdbcType="TIMESTAMP" />
+    <result column="ladder_num" property="ladderNum" jdbcType="INTEGER" />
+    <result column="activity_end_time" property="activityEndTime" jdbcType="TIMESTAMP" />
+    <result column="task_status" property="taskStatus" jdbcType="INTEGER" />
+    <result column="modify_time" property="modifyTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="type" property="type" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, activity_id, biz_id, token, launch_task_pin, beans, coupons_num, coupons, reward_flag,
+    complete_time, reward_time, ladder_num, activity_end_time, task_status, modify_time,
+    create_time, type
+  </sql>
+</mapper>
