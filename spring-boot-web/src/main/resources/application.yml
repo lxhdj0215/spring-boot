@@ -34,13 +34,13 @@ sharding:
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/ds0?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
         username: root
-        password: 123456
+        password: admin
       slave:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://localhost:3306/ds0?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
         username: root
-        password: 123456
+        password: admin
 
     config:
       sharding:
